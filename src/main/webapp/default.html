@@ -1,0 +1,40 @@
+<!<!DOCTYPE html>
+<html lang="en">
+	
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+<title>Deneme</title>
+
+
+	</head>
+	
+	 <body>
+<textarea id="messagesTextArea" readonly = "readonly" rows="10" cols="45"></textarea><br/>
+<input type = "text" id="messageText" size="50" /><input type="button" value="Send" onclick="sendMessage();" />
+   
+	</body>
+  
+  </html>
+  
+  
+<script type = "text/javascript">
+setTimeout(function(){
+	var location = window.location;
+	var wsUrl = 'wss://' + location.hostname + (location.port ? ':' + location.port : '') + '/stylishConnector';
+	wsCon = new WebSocket(wsUrl);
+	wsCon.onopen = function() {
+	};
+	
+	wsCon.onmessage = function(message) {
+		messagesTextArea.value += message.data + "\n";
+	}
+	},1000
+	);
+
+function sendMessage(){
+		wsCon.send(messageText.value);
+		messagesTextArea.value += messageText.value + "\n";
+		messageText.value = "";
+	}
+</script>

@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	
+  
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is social network html5 template available in themeforest......" />
+		<meta name="keywords" content="Social Network, Social Media, Make Friends, Newsfeed, Profile Page" />
+		<meta name="robots" content="index, follow" />
+		<title>NextRTC Example Webapp</title>
+
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		
+		
+		
+		<title>Çevrimiçi Görüşme |Mesaj Giriniz...</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/ionicons.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link href="/css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylish.css" />
+    
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/images/fav.png"/>
+  
+               <title>Camera Plugin</title>
+
+        <!-- Bootstrap core CSS --> 
+        <link href="/public_html/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Load the camera ac's CSS -->
+        <link href="/public_html/css/jquery.camera.css" rel="stylesheet">
+	</head>
+	
+  <body style="margin-top: 60px;">
+<div id="header">
+    
+     </div>
+     
+
+
+    
+<div id="page-contents">
+    	<div class="container">
+    		<div class="row">
+
+    			<!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+    			<div class="col-md-3 static">
+    			<div id="login-frame" class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				
+			</div>
+
+			<form class="contact1-form validate-form" method="get">
+				<span class="contact1-form-title">
+					?????
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "İsim Zorunlu">
+					<input class="input1" type="text" name="name" placeholder="İsim">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Geçerli bir e-posta adresi zorunlu: yk@abcxyz.com">
+					<input class="input1" type="text" name="email" placeholder="E-posta" value="a@b.com">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<textarea class="input1" name="message" placeholder="Varsa mesajınız"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button id="btnStartConversation" type="button" class="contact1-form-btn">
+						<span>
+							Görüşmeye Başla
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="conv-frame" style="display:none">
+		<div class="content" style="width: 300px;">
+			
+			<div class="video">
+				<div id="container"></div>
+				<div style="display:none;"><video id="template" style="height: -webkit-fill-available;" autoplay controls></video></div>
+			</div>
+			
+		</div>
+	</div>
+
+    			
+          <div class="video">
+			<div id="container"></div>
+			<div style="display:none;"><video id="template" style="height: -webkit-fill-available;" autoplay controls></video></div>
+		</div>
+          </div>
+    			<div class="col-md-7" style="padding-left: 0px;padding-right: 0px; border-right-width: 0px; left: 150px;">
+
+            <!-- Post Create Box
+            ================================================= -->
+            <div class="create-post">
+            	
+            </div><!-- Post Create Box End -->
+
+
+            <!-- Chat Room
+            ================================================= -->
+            <div class="chat-room">
+              <div class="row">
+                <div class="col-md-5">
+
+                  <!-- Contact List in Left-->
+                  <div class="scroll-wrapper nav nav-tabs contact-list scrollbar-wrapper scrollbar-outer" style="position: relative;"><ul class="nav nav-tabs contact-list scrollbar-wrapper scrollbar-outer scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 400px;">
+                    <li class="active">
+                      <a href="#contact-1" data-toggle="tab">
+                        <div class="contact">
+                        	<div class="msg-preview">
+                        		<h6>Linda Lohan</h6>
+                        		<p class="text-muted">Hi there, how are you</p>
+                            <small class="text-muted">a min ago</small>
+                            <div class="chat-alert">1</div>
+                        	</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contact-2" data-toggle="tab">
+                        <div class="contact">
+                          <div class="msg-preview">
+                            <h6>Julia Cox</h6>
+                            <p class="text-muted">see you soon</p>
+                            <small class="text-muted">an hour ago</small>
+                            <div class="seen"><i class="icon ion-checkmark-round"></i></div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contact-3" data-toggle="tab">
+                        <div class="contact">
+                          <div class="msg-preview">
+                            <h6>Sophia Lee</h6>
+                            <p class="text-muted">Okay fine. thank you</p>
+                            <small class="text-muted">13 hour ago</small>
+                            <div class="replied"><i class="icon ion-reply"></i></div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contact-4" data-toggle="tab">
+                        <div class="contact">
+                        	<div class="msg-preview">
+                        		<h6>John Doe</h6>
+                        		<p class="text-muted">hey anybody there</p>
+                            <small class="text-muted">Yesterday</small>
+                            <div class="chat-alert">1</div>
+                        	</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contact-5" data-toggle="tab">
+                        <div class="contact">
+                          <div class="msg-preview">
+                            <h6>Anna Young</h6>
+                            <p class="text-muted">I gotta go</p>
+                            <small class="text-muted">2 days ago</small>
+                            <div class="seen"><i class="icon ion-checkmark-round"></i></div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contact-6" data-toggle="tab">
+                        <div class="contact">
+                        	<div class="msg-preview">
+                        		<h6>Richard Bell</h6>
+                        		<p class="text-muted">Hey there?</p>
+                            <small class="text-muted">2 days ago</small>
+                            <div class="chat-alert">1</div>
+                        	</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 86px;"></div></div></div>
+                  </div><!--Contact List in Left End-->
+
+                </div>
+                <div class="col-md-7">
+
+                  <!--Chat Messages in Right-->
+                  <div class="scroll-wrapper tab-content scrollbar-wrapper wrapper scrollbar-outer" style="position: relative;"><div class="tab-content scrollbar-wrapper wrapper scrollbar-outer scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 400px;">
+                    <div class="tab-pane active" id="contact-1">
+                      <div class="chat-body">
+                      	<ul class="chat-message" id="chatmessagedeneme">
+                      		
+                      	</ul>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="contact-2">
+                      <div class="chat-body">
+                      	<ul class="chat-message">
+                      		<li class="left">
+                      			<img src="images/users/user-10.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Julia Cox</h5>
+                              	<small class="text-muted">a day ago</small>
+                              </div>
+                              <p>Hi</p>
+                            </div>
+                      		</li>
+                          <li class="right">
+                      			<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Sarah Cruiz</h5>
+                              	<small class="text-muted">a day ago</small>
+                              </div>
+                              <p>hellow</p>
+                            </div>
+                      		</li>
+                          <li class="left">
+                      			<img src="images/users/user-10.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Julia Cox</h5>
+                              	<small class="text-muted">an hour ago</small>
+                              </div>
+                              <p>good</p>
+                            </div>
+                      		</li>
+                          <li class="right">
+                      			<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Sarah Cruiz</h5>
+                              	<small class="text-muted">an hour ago</small>
+                              </div>
+                              <p>see you soon</p>
+                            </div>
+                      		</li>
+                      	</ul>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="contact-3">
+                      <div class="chat-body">
+                      	<ul class="chat-message">
+                      		<li class="right">
+                      			<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Sarah</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                      		</li>
+                          <li class="left">
+                      			<img src="images/users/user-3.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Sophia Lee</h5>
+                              	<small class="text-muted">a day ago</small>
+                              </div>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            </div>
+                      		</li>
+                          <li class="right">
+                      			<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Sarah  Cruiz</h5>
+                              	<small class="text-muted">13 hours ago</small>
+                              </div>
+                              <p>Okay fine. thank you</p>
+                            </div>
+                      		</li>
+                      	</ul>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="contact-4">
+                      <div class="chat-body">
+                      	<ul class="chat-message">
+                      		<li class="left">
+                      			<img src="images/users/user-4.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>John Doe</h5>
+                              	<small class="text-muted">a day ago</small>
+                              </div>
+                              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                            </div>
+                      		</li>
+                          <li class="left">
+                      			<img src="images/users/user-4.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>John Doe</h5>
+                              	<small class="text-muted">a day ago</small>
+                              </div>
+                              <p>hey anybody there</p>
+                            </div>
+                      		</li>
+                      	</ul>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="contact-5">
+                      <div class="chat-body">
+                      	<ul class="chat-message">
+                      		<li class="left">
+                      			<img src="images/users/user-9.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Anna Young</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
+                            </div>
+                      		</li>
+                          <li class="left">
+                      			<img src="images/users/user-9.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Anna Young</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                      		</li>
+                          <li class="right">
+                      			<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Sarah Cruiz</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>I gotta go</p>
+                            </div>
+                      		</li>
+                      	</ul>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="contact-6">
+                      <div class="chat-body">
+                      	<ul class="chat-message">
+                      		<li class="left">
+                      			<img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Richard Bell</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>Hello</p>
+                            </div>
+                      		</li>
+                          <li class="left">
+                      			<img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Richard Bell</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>Hi</p>
+                            </div>
+                      		</li>
+                          <li class="left">
+                      			<img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Richard Bell</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>Hey</p>
+                            </div>
+                      		</li>
+                          <li class="left">
+                      			<img src="images/users/user-8.jpg" alt="" class="profile-photo-sm pull-left">
+                      			<div class="chat-item">
+                              <div class="chat-item-header">
+                              	<h5>Richard Bell</h5>
+                              	<small class="text-muted">2 days ago</small>
+                              </div>
+                              <p>Hey there</p>
+                            </div>
+                      		</li>
+                      	</ul>
+                      </div>
+                    </div>
+                  </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 85px;"></div></div></div>
+</div><!--Chat Messages in Right End-->
+
+                  
+                   <div class="send-message">
+                    <div class="input-group">
+                      <div class="message-input">
+				<div class="wrap">
+				<div class="messages">
+				<ul>
+					<!-- <li class="sent">
+						<img src="../images/shoe.png" alt="" />
+						<p></p>
+					</li>
+					<li class="replies">
+						<img src="customer_image" alt="" />
+						<p></p>
+					</li> -->
+				</ul>
+			</div>
+			<div class="message-input">
+				<div class="wrap">
+				<input type="text" id="messageText" placeholder="Mesajınızı buraya yazabilirsiniz..." style="width: 200px;";/>
+				<input id="inputFileToLoad" type="file" />
+				
+	
+				
+				<button class="submit" onclick="sendMessageBinary();">Resim Gönder</button>
+				<button class="submit" onclick="sendMessage();"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+				<div class="tools">
+                    <ul class="publishing-tools list-inline">
+                    <li><a href="#"><i class="fa fa-paperclip attachment" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="ion-compose"></i></a></li>
+                      <li><a href="#"><i class="ion-images"></i></a></li>
+                      <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
+                      
+                    </ul>
+                  </div>
+				</div>
+			</div>
+					</div>
+			</div>
+                      
+                    </div>
+                  </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+
+    			<!-- Newsfeed Common Side Bar Right
+          ================================================= -->
+    		
+    		</div>
+    	</div>
+    </div>
+     
+
+ <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="/js/jquery.appear.min.js"></script>
+	<script src="/js/jquery.incremental-counter.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="webrtc-customer.js"></script>
+    <script src="/js/bundle.js"></script>
+   <!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!--===============================================================================================-->
+	<script src="main.js"></script>
+	<script src="webrtc-customer.js"></script>
+       
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/public_html/js/jquery.min.js"><\/script>')</script>
+        <script src="/public_html/js/bootstrap.min.js"></script>
+        
+        <!-- Load the plugin file -->
+        <script src="/public_html/js/jquery.camera.js"></script>
+
+<script src="init.js"></script>
+<script src="webrtc-stylish.js"></script>
+<script src="main.js"></script>
+   
+   <script type = "text/javascript">
+setTimeout(function(){
+	var index = 0;
+	var location = window.location;
+	var wsUrl = 'wss://' + location.hostname + (location.port ? ':' + location.port : '') + '/customerConnector';
+	wsCon = new WebSocket(wsUrl);
+	wsCon.onopen = function() {
+	};
+	
+	wsCon.onmessage = function(message) {
+	index++;
+	
+
+if(index != 1 && (message.data).includes(".png") == false)
+{
+$('#chatmessagedeneme').append('<li class="right"><img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right"><div class="chat-item"><div class="chat-item-header"><h5>Modacı</h5><small class="text-muted">Şimdi</small></div><p>'+message.data+'</p></div></li>');
+}
+else if((message.data).includes(".png"))
+{
+	$('#chatmessagedeneme').append('<li class="right"><img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right"><div class="chat-item"><div class="chat-item-header"><h5>Modacı</h5><small class="text-muted">Şimdi</small></div><img style="max-width: 100%;max-height: 100%" src=/'+message.data+'></img></div></li>');
+}
+
+
+
+		
+	}
+	},1000
+	);
+
+function sendMessage(){
+		wsCon.send(messageText.value);
+		
+				$('#chatmessagedeneme').append('<li class="left"><img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right"><div class="chat-item"><div class="chat-item-header"><h5>Ben</h5><small class="text-muted">Şimdi</small></div><p>'+messageText.value+'</p></div></li>');
+		messageText.value = "";
+	}
+	
+	function sendMessageBinary(){
+		 
+		 
+		  var filesSelected = document.getElementById("inputFileToLoad").files[0];
+			wsCon.send(filesSelected.name);
+				$('#chatmessagedeneme').append('<li class="left"><img src="images/users/user-1.jpg" alt="" class="profile-photo-sm pull-right"><div class="chat-item"><div class="chat-item-header"><h5>Ben</h5><small class="text-muted">Şimdi</small></div><img style="max-width: 100%;max-height: 100%" src=/'+filesSelected.name+'></img></div></li>'); 
+  
+	
+	}
+</script>
+    
+	</body>
+</html>
+
+<script> 
+
+  $("#header").load("/layout.html"); 
+
+
+</script> 
+ 

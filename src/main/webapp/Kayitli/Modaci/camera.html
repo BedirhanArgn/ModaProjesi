@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+
+<video autoplay width="640" height="480"></video>
+<img width="640" height="480">
+<canvas style="display:none;"widht="640" height="480"></canvas>
+
+<script>
+
+window.URL=window.URL
+navigator.getUserMedia=navigator.getUserMedia
+navigator.webkitGetUserMedia
+navigator.mozGetUserMedia
+navigator.msGetUserMedia;
+
+
+var video=document.querySelector('video');
+var canvas=document.querySelector('canvas');
+var ctx=canvas.getContext('2d');
+var localStream=null;
+
+
+if(navigator.getUserMedia){
+
+var hataOlustuFonksiyonu=function(e)
+{
+console.log('izin verilmedi!',e);
+};
+
+navigator.getUserMedia({
+audio:false,
+video:true
+},
+
+function(stream){
+video.src=window.URL.creatObjectURL(stream);
+localStream=stream;
+
+},
+hataOlustuFonksiyonu);
+}else{
+
+alert('Tarayıcınızın yeterli webRTC desteği bulunmuyor');
+}
+video.addEventListener('click',fotografCek,false);
+function fotografCek()
+{
+if(localStream){
+ctx.drawImage(video,0,0);
+
+document.querySelector('img').src=canvas.toDaraURL('îmage/webp');
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

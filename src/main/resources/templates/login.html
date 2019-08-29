@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+</head>
+<body>
+<tr th:each="user : ${user}">
+    <td th:text="${user.email}">1</td>
+    <td th:text="${user.ad}">Text ...</td>
+</tr>
+</body>
+</html>

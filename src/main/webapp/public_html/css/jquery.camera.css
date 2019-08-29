@@ -1,0 +1,34 @@
+.ac-display{
+    position: relative;
+
+}
+.ac-camera{
+    position: relative;
+    text-align: center;
+     left: -130px;
+}
+#ac-cam-steam, #ac-cam-photo {
+    background-color: #888;
+    top: 0;
+    left: 10;
+}
+.ac-icon {
+    display: inline-block;
+    margin: 0 2px;
+    background: #4367e1;
+    bottom: 20px;
+    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 20%;
+    height: 48px;
+    width: 48px;
+    padding: 2px;
+    z-index: 1;
+}
+.ac-icon img, #ac-cam-cancel img{
+    width: 32px;
+    margin: 2px;
+}
+#camera-retake {
+    display: none;
+}

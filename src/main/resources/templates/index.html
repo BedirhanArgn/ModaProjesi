@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is social network html5 template available in themeforest......" />
+	<meta name="keywords" content="Social Network, Social Media, Make Friends, Newsfeed, Profile Page" />
+	<meta name="robots" content="index, follow" />
+	<title>YKM Moda </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/ionicons.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	<style>
+		body{
+		background-image:url("/images/background2.jpg");
+		}
+	</style>
+</head>
+<body>
+
+<div id="header"></div>
+<div id="lp-register">
+	<div class="container wrapper">
+		<div class="row">
+			<div class="col-sm-5">
+				<div class="intro-texts">
+					<h1 class="text-white">Modayı Yakalayın!!! </h1>
+					<p> ..... uygulaması trendleri ve modacıları takip etmek isteyen, özel etkinlikler için kombin, hediye önerileri almak isteyenler için sosyal ağdır.<br /> <br />Haydi, şimdi bize katıl!</p>
+
+
+					<a href="/Hakkimizda.html" class="btn btn-primary">Hakkımızda</a>
+
+
+				</div>
+			</div>
+			<div class="col-sm-6 col-sm-offset-1">
+				<div class="reg-form-container">
+
+					<div class="reg-options">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#register" data-toggle="tab">Kaydol</a></li>
+							<li><a href="#login" data-toggle="tab">Giriş</a></li>
+						</ul>
+					</div>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="register">
+							<h3>Kayıt</h3>
+							<p class="text-muted">En güncel moda trendlerini yakalamak için şimdi kaydolun!</p>
+
+							<form th:action="@{/api/kaydet/kullanici}" th:object="${kullanici}" th:method="post" >
+								<div class="row">
+									<div class="form-group col-xs-12">
+										<label for="firstname" class="sr-only" >İsim Soyisim</label>
+										<input  th:field=*{ad} id="firstname" class="form-control input-group-lg" type="text" name="ad" title="Enter first name" placeholder="İsim Soyisim"/>
+										<p th:if="${#fields.hasErrors('ad')}" th:errors="*{ad}" >Ad alanı boş olamaz</p>
+									</div>
+								</div>
+								<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="email" class="sr-only">Email</label>
+									<input th:field="*{email}" id="email" class="form-control input-group-lg" type="text" name="email" title="Enter Email" placeholder="Email"/>
+									<p th:if="${#fields.hasErrors('email')}" th:errors="*{email}">E mail Alanı boş olamaz</p>
+								</div>
+							</div>
+
+								<div class="row">
+									<div class="form-group col-xs-12">
+										<label for="password" class="sr-only">Parola</label>
+										<input id="password" class="form-control input-group-lg" type="password" name="sifre" title="Enter password" placeholder="Parola"/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-xs-12">
+										<label for="telefon" class="sr-only">Telefon</label>
+										<input id="telefon" class="form-control input-group-lg" type="text" name="telefon" title="Enter Telefone" placeholder="Telefon"/>
+									</div>
+								</div>
+								<div class="row">
+									<p class="birth"><strong>Doğum Tarihi</strong></p>
+									<div class="form-group col-xs-12">
+										<input type="date" id="bday" name="dogumTarihi">
+									</div>
+
+									<!-- <div class="form-group col-sm-3 col-xs-6">
+                                      <label for="month" class="sr-only"></label>
+                                      <select class="form-control" id="day">
+                                        <option value="Day" disabled selected>Gün</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-sm-3 col-xs-6">
+                                      <label for="month" class="sr-only"></label>
+                                      <select class="form-control" id="month">
+                                        <option value="month" disabled selected>Ay</option>
+                                        <option value="01">Ocak</option>
+                                        <option value="02">Şubat</option>
+                                        <option value="03">Mart</option>
+                                        <option value="04">Nisan</option>
+                                        <option value="05">Mayıs</option>
+                                        <option value="06">Haziran</option>
+                                        <option value="07">Temmuz</option>
+                                        <option value="08">Ağustos</option>
+                                        <option value="09">Eylül</option>
+                                        <option value="10">Ekim</option>
+                                        <option value="11">Kasım</option>
+                                        <option value="12">Aralık</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                      <label for="year" class="sr-only"></label>
+                                      <select class="form-control" id="year">
+                                        <option value="year" disabled selected>Yıl</option>
+                                        <option>2000</option>
+                                        <option>2001</option>
+                                        <option>2002</option>
+                                        <option>2004</option>
+                                        <option>2005</option>
+                                        <option>2006</option>
+                                        <option>2007</option>
+                                        <option>2008</option>
+                                        <option>2009</option>
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                      </select>
+                                    </div>-->
+								</div>
+								<div class="form-group gender">
+									<input  type="radio" name="cinsiyet" value="erkek">Erkek
+									<input  type="radio" name="cinsiyet" value="kadin">Kadın
+								</div>
+								<div class="row">
+									<div class="form-group col-xs-6">
+										<label for="kilo" class="sr-only">Kilo</label>
+										<input id="kilo" class="form-control input-group-lg reg_name" type="text" name="kilo" title="Enter kilo" placeholder="Kilo"/>
+									</div>
+									<div class="form-group col-xs-6">
+										<label for="boy" class="sr-only">Boy</label>
+										<input id="boy" class="form-control input-group-lg reg_name" type="text" name="boy" title="Enter boy" placeholder="Boy"/>
+									</div>
+
+								</div>
+								<button onclick="kayit_ol()" type="submit" data-toggle="tab" class="btn btn-primary">Kayit Ol</button>
+							</form>
+
+
+							<li><a href="#login" data-toggle="tab">Hesabınız var mı?</a></li>
+
+
+
+						</div>
+						<div class="tab-pane" id="login">
+							<h3>Giriş</h3>
+							<p class="text-muted">Hesabınıza giriş yapın</p>
+
+							<form th:action="@{/login}" id='Login_form' method="post">
+								<div class="row">
+									<div class="form-group col-xs-12">
+										<label for="my-email" class="sr-only">Email</label>
+										<input id="my-email" class="form-control input-group-lg" type="text" name="email" title="Enter Email" placeholder="Email"/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-xs-12">
+										<label for="my-password" class="sr-only">Parola</label>
+
+										<input id="my-password" class="form-control input-group-lg" type="password" name="sifre" title="Enter password" placeholder="Parola"/>
+
+										<div class="row">
+
+										</div>
+									</div>
+								</div>
+
+
+							<li><a href="#login" data-toggle="tab">Şifremi Unuttum?</a></li>
+
+							<button id="loginn" type="submit" class="btn btn-primary">Giriş Yap</a> </button>
+							</form>
+
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-6">
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+</script>
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.appear.min.js"></script>
+<script src="/js/jquery.incremental-counter.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/modaci.js"></script>
+<script src="/js/giris.js"></script>
+
+
+</body>
+</html>
+
