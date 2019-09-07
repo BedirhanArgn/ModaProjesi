@@ -78,14 +78,13 @@ public class IndexController {
        String kullanicitur=kullanici2.getKullaniciTipi().toString();
        if(kullanici2!=null) {
            if(kullanicitur.equals("MUSTERI")) {
-            model.setViewName("CanliGorusme");
+            model.setViewName("chat");
             model.addObject("kullanici",kullanici2);
             return model;
            }
             else {
-                model.setViewName("MODACI");
-                model.setViewName("CanliGorusmeModa");
-                model.addObject(kullanici2);
+                model.setViewName("chat");
+                model.addObject("modaci",kullanici2);
                return model;
 
            }

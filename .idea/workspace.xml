@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21eb7ebd-6334-469b-9c47-d6bbb68e21ba" name="Default Changelist" comment="" />
+    <list default="true" id="21eb7ebd-6334-469b-9c47-d6bbb68e21ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,21 +29,22 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\webapp\chatcssjs" />
+      <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\resources\templates\Chat Template" />
+      <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\resources\static\js" />
+      <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\resources\static\css" />
+      <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\resources\templates" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\resources\templates" />
       <recent name="C:\Users\argunpc\Desktop\web-master@17468a3a849\src\main\webapp\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\resources\templates" />
-      <recent name="C:\Users\argunpc\Desktop\web-master@17468a3a849\src\main" />
-      <recent name="C:\Users\argunpc\Desktop\web-master@17468a3a849\src\main\resources" />
-      <recent name="C:\Users\argunpc\Desktop\web-master@17468a3a849\src\main\java" />
-      <recent name="C:\Users\argunpc\Desktop\web-master@17468a3a849\src\main\java\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -97,6 +101,19 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -152,17 +169,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>87</line>
+          <line>86</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>88</line>
+          <line>87</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -172,83 +184,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>90</line>
+          <line>89</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>92</line>
+          <line>91</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>93</line>
+          <line>92</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>95</line>
+          <line>94</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>96</line>
+          <line>95</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>99</line>
+          <line>98</line>
           <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/model/Kullanici.java</url>
