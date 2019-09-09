@@ -12,7 +12,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 750px;
+  width: 1080px;
   background: #444753;
   border-radius: 5px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .chat {
-  width: 490px;
+  width: 820px;
   float: left;
   background: #F2F5F8;
   border-top-right-radius: 5px;

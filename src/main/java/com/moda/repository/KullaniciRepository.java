@@ -15,5 +15,5 @@ public interface KullaniciRepository extends CrudRepository<Kullanici, Long> {
 	Kullanici save(Kullanici kullanici);
 	Kullanici findByEmail(String Email);
 	Kullanici findBySifre(String Sifre);
-
+	List<Kullanici> findByDurumAndKullaniciTipi(String durum, com.moda.util.KullaniciTipi kullanici_tipi);
 }

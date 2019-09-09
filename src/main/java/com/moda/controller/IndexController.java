@@ -1,6 +1,7 @@
 package com.moda.controller;
 
 import com.moda.model.Kullanici;
+import com.moda.model.KullaniciTipi;
 import com.moda.repository.KullaniciRepository;
 import com.rabbitmq.client.AMQP;
 import dagger.Reusable;
@@ -17,6 +18,7 @@ import javax.validation.Valid;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -72,19 +74,25 @@ public class IndexController {
         }
 */
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public ModelAndView login(@ModelAttribute("user") Kullanici kullanici) {
+    public ModelAndView login(Kullanici kullanici) {
        ModelAndView model=new ModelAndView();
         Kullanici kullanici2= repository.findByEmail(kullanici.getEmail());
        String kullanicitur=kullanici2.getKullaniciTipi().toString();
        if(kullanici2!=null) {
-           if(kullanicitur.equals("MUSTERI")) {
+           if(kullanicitur.equals("MODACI")) {
             model.setViewName("chat");
+            kullanici2.setDurum("online");
             model.addObject("kullanici",kullanici2);
+            List<Kullanici> OnlineKullanicilar= repository.findByDurumAndKullaniciTipi("online", com.moda.util.KullaniciTipi.MUSTERI);
+            model.addObject("onlinekullanicilar",OnlineKullanicilar);
             return model;
            }
             else {
                 model.setViewName("chat");
-                model.addObject("modaci",kullanici2);
+               kullanici2.setDurum("online");
+               List<Kullanici> OnlineModacilar=repository.findByDurumAndKullaniciTipi("online", com.moda.util.KullaniciTipi.MODACI);
+               model.addObject("kullanici",kullanici2);
+               model.addObject("onlinekullanicilar",OnlineModacilar);
                return model;
 
            }
@@ -92,7 +100,7 @@ public class IndexController {
         }
        else {
 
-           return null;
+           return model;
        }
 
 
