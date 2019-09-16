@@ -41,7 +41,6 @@ public class KullaniciController {
 			}
 		}
 	}
-	
 	@GetMapping("/getir/modacilistesi")
 	public List<Kullanici> getirModaciListesi() {
 		List<Kullanici> kullaniciListesi = new ArrayList<>();

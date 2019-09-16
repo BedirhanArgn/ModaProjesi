@@ -39,7 +39,7 @@
         this.$textarea.val('');
         
         // responses
-        var templateResponse = Handlebars.compile( $("#message-response-template").html());
+        //var templateResponse = Handlebars.compile( $("#message-response-template").html());
         var contextResponse = { 
           response: this.getRandomItem(this.messageResponses),
           time: this.getCurrentTime()
@@ -49,11 +49,8 @@
           this.$chatHistoryList.append(templateResponse(contextResponse));
           this.scrollToBottom();
         }.bind(this), 1500);
-        
       }
-      
     },
-    
     addMessage: function() {
       this.messageToSend = this.$textarea.val()
       this.render();         

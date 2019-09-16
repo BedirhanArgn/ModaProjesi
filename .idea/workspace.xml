@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21eb7ebd-6334-469b-9c47-d6bbb68e21ba" name="Default Changelist" comment="">
+    <list default="true" id="21eb7ebd-6334-469b-9c47-d6bbb68e21ba" name="Default Changelist" comment="&lt;">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moda/repository/KullaniciRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moda/repository/KullaniciRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moda/ModaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moda/ModaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moda/controller/KullaniciController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chatcssjs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chatcssjs/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/chatcssjs/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chatcssjs/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +36,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
@@ -46,6 +51,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\webapp\chatcssjs" />
       <recent name="C:\Users\argunpc\Desktop\ModaProjesi-master\src\main\resources\templates" />
       <recent name="C:\Users\argunpc\Desktop\web-master@17468a3a849\src\main\webapp\images" />
     </key>
@@ -68,7 +74,7 @@
       <module name="Moda" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.moda.*" />
+          <option name="PATTERN" value="com.moda.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,29 +132,89 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="85" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="86" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="87" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="88" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="89" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/MvcConfig.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/MvcConfig.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/MvcConfig.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/MvcConfig.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/moda/model/Kullanici.java</url>
@@ -157,14 +223,28 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/IndexController.java</url>
-          <line>76</line>
-          <properties class="com.moda.controller.IndexController" method="login">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/controller/ChatController.java</url>
+          <line>22</line>
+          <properties class="com.moda.controller.ChatController" method="sendMessage">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="84" />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/moda/config/WsConfig.java</url>
+          <line>15</line>
+          <properties class="com.moda.config.WsConfig" method="registerStompEndpoints">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="OnlineModacilar" />
+        <watch expression="OnlineModacilar" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

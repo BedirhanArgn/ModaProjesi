@@ -1,6 +1,7 @@
 package com.moda;
 
 
+import com.moda.config.WsConfig;
 import com.moda.controller.IndexController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -16,7 +17,7 @@ import com.moda.videochat.MyWebSocketConfigurator;
 @Configuration
 @EnableAutoConfiguration
 @EnableWebSocket
-@Import(MyWebSocketConfigurator.class)
+@Import(WsConfig.class)
 @SpringBootApplication(scanBasePackages={
 		"com.moda.model", "com.moda.repository","com.moda.repository.KullaniciRepository.java"})
 @ComponentScan(basePackageClasses = IndexController.class)
